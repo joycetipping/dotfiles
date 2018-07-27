@@ -13,7 +13,36 @@ export GPG_TTY=`tty`
 # Source any machine-specific aliases if we have them
 [[ -e ~/.bash_aliases ]] && source ~/.bash_aliases
 
+# Aliases {{{
+
+# Navigation
+alias l='ls -CF'
+alias la="ls -a"
+alias ll="ls -ilh"
+alias ls="ls --color=auto"
+alias s="ls"
+alias u="cd ../"
+alias u2="cd ../../"
+alias u3="cd ../../../"
+alias u4="cd ../../../../"
+alias u5="cd ../../../../../"
+alias u6="cd ../../../../../../"
+alias u7="cd ../../../../../../../"
+alias u8="cd ../../../../../../../../"
+
+# Home
+alias ev0="curl http://192.168.0.34:8180/0"  # turn evaporative off
+alias evf="curl http://192.168.0.34:8180/4"  # turn evaporative to fan
+alias evc="curl http://192.168.0.34:8180/5"  # turn evaporative to cool
+
+# Other
+alias bc="echo Starting bc -l;echo;bc -l"
+alias grep="grep --color"
+alias now="date +%Y.%m%d.%H%M"
 alias pd='rlwrap perl -de1'
+
+# }}}
+
 
 # If we don't have a DISPLAY already, set it to :0
 # (in practice this happens if you don't have bashrc-xpra and you're sshing
