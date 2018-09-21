@@ -13,26 +13,14 @@ init_session() {
             PalmDetect=1 \
             PalmMinWidth=5 \
             PalmMinZ=100 \
-            FingerLow=45 \
-            FingerHigh=55
+            FingerLow=40 \
+            FingerHigh=50 \
+            VertScrollDelta=-114 \
+            HorizScrollDelta=-114
   xrdb ~/.Xresources
   xcompmgr &
   pulseaudio --start
-  nitrogen --set-zoom-fill ~/r/glacial/backrounds/jbn8I.jpg
-
-  case `hostname` in
-  iniidae)
-    # Work around Lenovo's pathological End/Insert key overloading on the X250
-    xmodmap -e 'keycode 118 = End'
-
-    # Fix screen colors, unscientifically
-    xgamma -rgamma 1.2 -ggamma 1.2 -bgamma 1.5
-    ;;
-
-  *)
-    echo "got unknown hostname $HOSTNAME"
-    ;;
-  esac
+  nitrogen --set-zoom-fill ~/jbn8I.jpg
 }
 
 sleep 2 && init_session
