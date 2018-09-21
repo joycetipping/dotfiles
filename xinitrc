@@ -10,7 +10,11 @@ init_session() {
             HorizTwoFingerScroll=1 \
             RTCornerButton=0 \
             RBCornerButton=0 \
-            TouchpadOff=1
+            PalmDetect=1 \
+            PalmMinWidth=5 \
+            PalmMinZ=100 \
+            FingerLow=45 \
+            FingerHigh=55
   xrdb ~/.Xresources
   xcompmgr &
   pulseaudio --start
