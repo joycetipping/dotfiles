@@ -68,29 +68,30 @@ URxvt*letterSpace: -2
 URxvt*cursorBlink: true
 URxvt*cursorUnderline: true
 
-! Indicator color scheme
-#if 0
-URxvt*color0: gray
-URxvt*color1: red
-URxvt*color2: orange
-URxvt*color3: yellow
-URxvt*color4: green
-URxvt*color5: cyan
-URxvt*color6: blue
-URxvt*color7: purple
 
-URxvt*color8: DarkSlateGray
-URxvt*color9: coral1
-URxvt*color10: burlywood
-URxvt*color11: beige
-URxvt*color12: OliveDrab1
-URxvt*color13: SpringGreen1
-URxvt*color14: CadetBlue1
-URxvt*color15: DarkOrchid
+! Molokai color scheme
+#if 1
+URxvt*color0: #171717
+URxvt*color1: #fe4386
+URxvt*color2: #a6e32d
+URxvt*color3: #e6da73
+URxvt*color4: #0094d9
+URxvt*color5: #9b37ff
+URxvt*color6: #50b7d9
+URxvt*color7: #c7c7c7
+
+URxvt*color8:  #686868
+URxvt*color9:  #fa80ac
+URxvt*color10: #bde371
+URxvt*color11: #fff27f
+URxvt*color12: #00beff
+URxvt*color13: #be9eff
+URxvt*color14: #5ed7ff
+URxvt*color15: #ffffff
 #endif
 
 ! Mono color scheme (WIP)
-#if 1
+#if 0
 URxvt*color0: #a0a0a0
 URxvt*color1: #ffffff
 URxvt*color2: #808080
