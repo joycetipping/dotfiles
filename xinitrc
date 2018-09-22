@@ -18,6 +18,7 @@ init_session() {
             VertScrollDelta=-114 \
             HorizScrollDelta=-114
   xrdb ~/.Xresources
+  xmodmap ~/.Xmodmap
   xcompmgr &
   pulseaudio --start
   nitrogen --set-zoom-fill ~/jbn8I.jpg
