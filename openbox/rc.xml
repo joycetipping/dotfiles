@@ -51,26 +51,28 @@
     <keybind key="W-Q"><action name="Execute"><command>xtrlock</command></action></keybind>
     <keybind key='W-Escape'><action name='Execute'><command>locksleep</command></action></keybind><!-- lock and suspend -->
 
+    <!--
     <keybind key='XF86MonBrightnessUp'><action name='Execute'><command>backlight +100</command></action></keybind>
     <keybind key='XF86MonBrightnessDown'><action name='Execute'><command>backlight -100</command></action></keybind>
     <keybind key='S-XF86MonBrightnessUp'><action name='Execute'><command>backlight +5</command></action></keybind>
     <keybind key='S-XF86MonBrightnessDown'><action name='Execute'><command>backlight -5</command></action></keybind>
     <keybind key='W-b'><action name='Execute'><command>backlight 852</command></action></keybind>
     <keybind key='W-S-b'><action name='Execute'><command>backlight 2</command></action></keybind>
+    -->
 
     <keybind key='XF86AudioRaiseVolume'><action name='Execute'><command>vol-delta-pa 1024</command></action></keybind>
     <keybind key='XF86AudioLowerVolume'><action name='Execute'><command>vol-delta-pa -1024</command></action></keybind>
     <keybind key='S-XF86AudioRaiseVolume'><action name='Execute'><command>vol-delta-pa 4096</command></action></keybind>
     <keybind key='S-XF86AudioLowerVolume'><action name='Execute'><command>vol-delta-pa -4096</command></action></keybind>
-    <keybind key='XF86AudioMute'><action name='Execute'><command>vol-mute 1</command></action></keybind>
+    <keybind key='XF86AudioMute'><action name='Execute'><command>vol-mute-pa</command></action></keybind>
 
-    <!-- Keybindings for menus and dialogs-->
+    <!-- Keybindings for menus and dialogs -->
     <keybind key="A-F2"><action name="Execute"><command>gmrun</command></action></keybind>
     <keybind key="W-space"><action name="Execute"><command>gmrun</command></action></keybind>
     <keybind key="S-W-space"><action name="ShowMenu"><menu>client-menu</menu></action></keybind>
     <keybind key="C-W-A-space"><action name="ShowMenu"><menu>root-menu</menu></action></keybind>
 
-    <!-- Keybindings for windows -->
+    <!-- Keybindings for windows, optimized to 1600x900 screen -->
     <keybind key="A-F4"><action name="Close"/></keybind>
 
     <keybind key='W-s'><action name='ToggleOmnipresent'></action></keybind>
@@ -97,25 +99,21 @@
     </keybind>
     <keybind key='W-5'>
       <action name='Unmaximize'></action>
-      <action name='MoveResizeTo'><x>center</x></action>
+      <action name='MoveResizeTo'><x>center</x><y>center</y></action>
     </keybind>
     <keybind key='W-6'>
       <action name='Unmaximize'><direction>vertical</direction></action>
-      <action name='MoveResizeTo'><y>center</y></action>
+      <action name='MoveResizeTo'><y>0</y></action>
     </keybind>
     <keybind key='W-7'>
       <action name='Unmaximize'><direction>vertical</direction></action>
-      <action name='MoveResizeTo'><y>0</y></action>
+      <action name='MoveResizeTo'><y>225</y></action>
     </keybind>
     <keybind key='W-8'>
       <action name='Unmaximize'><direction>vertical</direction></action>
-      <action name='MoveResizeTo'><y>225</y></action>
-    </keybind>
-    <keybind key='W-9'>
-      <action name='Unmaximize'><direction>vertical</direction></action>
       <action name='MoveResizeTo'><y>450</y></action>
     </keybind>
-    <keybind key='W-0'>
+    <keybind key='W-9'>
       <action name='Unmaximize'><direction>vertical</direction></action>
       <action name='MoveResizeTo'><y>675</y></action>
     </keybind>
@@ -141,44 +139,52 @@
     </keybind>
     <keybind key='W-S-6'>
       <action name='Unmaximize'></action>
-      <action name='MoveResizeTo'><width>400</width><height>225</height><x>center</x><y>center</y></action>
+      <action name='MoveResizeTo'><width>400</width><height>225></height><x>0</x><y>0</y></action>
     </keybind>
     <keybind key='W-S-7'>
       <action name='Unmaximize'></action>
-      <action name='MoveResizeTo'><width>400</width><height>225></height><x>0</x><y>0</y></action>
+      <action name='MoveResizeTo'><width>1200</width><height>675></height><x>400</x><y>0</y></action>
     </keybind>
     <keybind key='W-S-8'>
       <action name='Unmaximize'></action>
-      <action name='MoveResizeTo'><width>1200</width><height>675></height><x>400</x><y>0</y></action>
+      <action name='MoveResizeTo'><width>1200</width><height>675</height><x>0</x><y>225</y></action>
     </keybind>
     <keybind key='W-S-9'>
       <action name='Unmaximize'></action>
-      <action name='MoveResizeTo'><width>1200</width><height>675</height><x>0</x><y>225</y></action>
-    </keybind>
-    <keybind key='W-S-0'>
-      <action name='Unmaximize'></action>
       <action name='MoveResizeTo'><width>400</width><height>225></height><x>1200</x><y>675</y></action>
+    </keybind>
+    <keybind key='W-0'>
+      <action name='Unmaximize'><direction>horizontal</direction></action>
+      <action name='MoveResizeTo'><width>800</width></action>
     </keybind>
     <keybind key='W-minus'>
       <action name='Unmaximize'><direction>horizontal</direction></action>
-      <action name='ResizeRelative'><right>-8</right></action>
+      <action name='MoveResizeTo'><width>400</width></action>
     </keybind>
     <keybind key='W-equal'>
       <action name='Unmaximize'><direction>horizontal</direction></action>
-      <action name='ResizeRelative'><right>8</right></action>
+      <action name='MoveResizeTo'><width>1200</width></action>
+    </keybind>
+    <keybind key='W-S-0'>
+      <action name='Unmaximize'><direction>vertical</direction></action>
+      <action name='MoveResizeTo'><height>450</height></action>
     </keybind>
     <keybind key='W-S-minus'>
       <action name='Unmaximize'><direction>vertical</direction></action>
-      <action name='ResizeRelative'><bottom>-6</bottom></action>
+      <action name='MoveResizeTo'><height>225</height></action>
     </keybind>
     <keybind key='W-S-equal'>
       <action name='Unmaximize'><direction>vertical</direction></action>
-      <action name='ResizeRelative'><bottom>6</bottom></action>
+      <action name='MoveResizeTo'><height>675</height></action>
     </keybind>
     <keybind key='W-C-h'><action name='MoveRelative'><x>-8</x><y>0</y></action></keybind>
     <keybind key='W-C-j'><action name='MoveRelative'><x>0</x><y>6</y></action></keybind>
     <keybind key='W-C-k'><action name='MoveRelative'><x>0</x><y>-6</y></action></keybind>
     <keybind key='W-C-l'><action name='MoveRelative'><x>8</x><y>0</y></action></keybind>
+    <keybind key='W-C-S-h'><action name='ResizeRelative'><right>-8</right></action></keybind>
+    <keybind key='W-C-S-j'><action name='ResizeRelative'><bottom>6</bottom></action></keybind>
+    <keybind key='W-C-S-k'><action name='ResizeRelative'><bottom>-6</bottom></action></keybind>
+    <keybind key='W-C-S-l'><action name='ResizeRelative'><right>8</right></action></keybind>
 
     <!-- Keybindings for applications -->
     <keybind key="W-t"><action name="Execute"><command>urxvt</command></action></keybind>
@@ -235,23 +241,6 @@
 
       <mousebind button="A-S-Left" action="Drag">
         <action name="Resize"/>
-      </mousebind>
-    </context>
-
-    <context name="Client">
-      <mousebind button="Left" action="Press">
-        <action name="Focus"/>
-        <action name="Raise"/>
-      </mousebind>
-
-      <mousebind button="Middle" action="Press">
-        <action name="Focus"/>
-        <action name="Raise"/>
-      </mousebind>
-
-      <mousebind button="Right" action="Press">
-        <action name="Focus"/>
-        <action name="Raise"/>
       </mousebind>
     </context>
 
