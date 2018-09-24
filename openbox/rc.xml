@@ -123,11 +123,11 @@
     </keybind>
     <keybind key='W-S-2'>
       <action name='Unmaximize'></action>
-      <action name='MoveResizeTo'><width>800</width><height>450</height><x>800</x><y>0</y></action>
+      <action name='MoveResizeTo'><width>800</width><height>450</height><x>0</x><y>450</y></action>
     </keybind>
     <keybind key='W-S-3'>
       <action name='Unmaximize'></action>
-      <action name='MoveResizeTo'><width>800</width><height>450</height><x>0</x><y>450</y></action>
+      <action name='MoveResizeTo'><width>800</width><height>450</height><x>800</x><y>0</y></action>
     </keybind>
     <keybind key='W-S-4'>
       <action name='Unmaximize'></action>
@@ -139,19 +139,19 @@
     </keybind>
     <keybind key='W-S-6'>
       <action name='Unmaximize'></action>
-      <action name='MoveResizeTo'><width>400</width><height>225></height><x>0</x><y>0</y></action>
+      <action name='MoveResizeTo'><width>400</width><height>234></height><x>0</x><y>0</y></action>
     </keybind>
     <keybind key='W-S-7'>
       <action name='Unmaximize'></action>
-      <action name='MoveResizeTo'><width>1200</width><height>675></height><x>400</x><y>0</y></action>
+      <action name='MoveResizeTo'><width>1200</width><height>684</height><x>0</x><y>225</y></action>
     </keybind>
     <keybind key='W-S-8'>
       <action name='Unmaximize'></action>
-      <action name='MoveResizeTo'><width>1200</width><height>675</height><x>0</x><y>225</y></action>
+      <action name='MoveResizeTo'><width>1200</width><height>684></height><x>400</x><y>0</y></action>
     </keybind>
     <keybind key='W-S-9'>
       <action name='Unmaximize'></action>
-      <action name='MoveResizeTo'><width>400</width><height>225></height><x>1200</x><y>675</y></action>
+      <action name='MoveResizeTo'><width>400</width><height>234></height><x>1200</x><y>675</y></action>
     </keybind>
     <keybind key='W-0'>
       <action name='Unmaximize'><direction>horizontal</direction></action>
@@ -171,11 +171,11 @@
     </keybind>
     <keybind key='W-S-minus'>
       <action name='Unmaximize'><direction>vertical</direction></action>
-      <action name='MoveResizeTo'><height>225</height></action>
+      <action name='MoveResizeTo'><height>234</height></action>
     </keybind>
     <keybind key='W-S-equal'>
       <action name='Unmaximize'><direction>vertical</direction></action>
-      <action name='MoveResizeTo'><height>675</height></action>
+      <action name='MoveResizeTo'><height>684</height></action>
     </keybind>
     <keybind key='W-C-h'><action name='MoveRelative'><x>-8</x><y>0</y></action></keybind>
     <keybind key='W-C-j'><action name='MoveRelative'><x>0</x><y>6</y></action></keybind>

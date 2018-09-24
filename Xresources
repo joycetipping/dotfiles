@@ -50,11 +50,11 @@ URxvt.keysym.Control-Down: \033[1;5B
 URxvt.keysym.Control-Left: \033[1;5D
 URxvt.keysym.Control-Right: \033[1;5C
 
-URxvt.geometry: 100x23
+URxvt.geometry: 100x25
 
 URxvt.scrollBar: false
 URxvt.thickness: 2
-URxvt.font: xft:Ubuntu Mono:size=14:hinting=none
+URxvt.font: xft:Ubuntu Mono:size=13:hinting=none
 
 URxvt*saveLines: 65536
 URxvt*borderless: true
