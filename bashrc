@@ -10,10 +10,10 @@ source ~/.bash/init
 
 export GPG_TTY=`tty`
 
+# Aliases {{{
+
 # Source any machine-specific aliases if we have them
 [[ -e ~/.bash_aliases ]] && source ~/.bash_aliases
-
-# Aliases {{{
 
 # Navigation
 alias l='ls -CF'
@@ -30,15 +30,29 @@ alias u6="cd ../../../../../../"
 alias u7="cd ../../../../../../../"
 alias u8="cd ../../../../../../../../"
 
+# Places
+alias blog="cd $HOME/projects/blog/"
+alias diary="cd $HOME/projects/life/diary/"
+alias dreams="vim $HOME/projects/life/dreams/$(date '+%Y').txt"
+alias fubar="cd $HOME/projects/company/"
+alias journal="cd $HOME/projects/life/journal/"
+alias notes="cd $HOME/projects/notes/"
+alias projects="cd $HOME/projects/"
+alias website="cd $HOME/projects/joycetipping.com/"
+
 # Home
 alias ev0="curl http://192.168.0.34:8180/0"  # turn evaporative off
 alias evf="curl http://192.168.0.34:8180/4"  # turn evaporative to fan
 alias evc="curl http://192.168.0.34:8180/5"  # turn evaporative to cool
 
+# Date and time
+alias d="date"
+alias now="date '+%A %-d %B %Y %H:%M:%S %Z'"
+
 # Other
 alias bc="echo Starting bc -l;echo;bc -l"
 alias grep="grep --color"
-alias now="date +%Y.%m%d.%H%M"
+alias sus='sudo pm-suspend'
 alias pd='rlwrap perl -de1'
 
 # }}}
