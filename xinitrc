@@ -8,15 +8,15 @@ init_session() {
   synclient VertEdgeScroll=0 \
             VertTwoFingerScroll=1 \
             HorizTwoFingerScroll=1 \
+            VertScrollDelta=-114 \
+            HorizScrollDelta=-114 \
             RTCornerButton=0 \
             RBCornerButton=0 \
             PalmDetect=1 \
             PalmMinWidth=5 \
             PalmMinZ=100 \
-            FingerLow=40 \
-            FingerHigh=50 \
-            VertScrollDelta=-114 \
-            HorizScrollDelta=-114
+            FingerHigh=45 \
+            FingerLow=35
   xrdb ~/.Xresources
   xmodmap ~/.Xmodmap
   xcompmgr &
