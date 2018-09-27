@@ -25,8 +25,8 @@
 
   <desktops>
     <number>100</number>
-    <firstdesk>1</firstdesk>
-    <popupTime>500</popupTime>
+    <firstdesk>45</firstdesk>
+    <popupTime>1000</popupTime>
   </desktops>
 
   <resize>
@@ -177,14 +177,14 @@
       <action name='Unmaximize'><direction>vertical</direction></action>
       <action name='MoveResizeTo'><height>684</height></action>
     </keybind>
-    <keybind key='W-C-h'><action name='MoveRelative'><x>-8</x><y>0</y></action></keybind>
-    <keybind key='W-C-j'><action name='MoveRelative'><x>0</x><y>6</y></action></keybind>
-    <keybind key='W-C-k'><action name='MoveRelative'><x>0</x><y>-6</y></action></keybind>
-    <keybind key='W-C-l'><action name='MoveRelative'><x>8</x><y>0</y></action></keybind>
-    <keybind key='W-C-S-h'><action name='ResizeRelative'><right>-8</right></action></keybind>
-    <keybind key='W-C-S-j'><action name='ResizeRelative'><bottom>6</bottom></action></keybind>
-    <keybind key='W-C-S-k'><action name='ResizeRelative'><bottom>-6</bottom></action></keybind>
-    <keybind key='W-C-S-l'><action name='ResizeRelative'><right>8</right></action></keybind>
+    <keybind key='A-h'><action name='MoveRelative'><x>-8</x><y>0</y></action></keybind>
+    <keybind key='A-j'><action name='MoveRelative'><x>0</x><y>6</y></action></keybind>
+    <keybind key='A-k'><action name='MoveRelative'><x>0</x><y>-6</y></action></keybind>
+    <keybind key='A-l'><action name='MoveRelative'><x>8</x><y>0</y></action></keybind>
+    <keybind key='A-S-h'><action name='ResizeRelative'><right>-8</right></action></keybind>
+    <keybind key='A-S-j'><action name='ResizeRelative'><bottom>6</bottom></action></keybind>
+    <keybind key='A-S-k'><action name='ResizeRelative'><bottom>-6</bottom></action></keybind>
+    <keybind key='A-S-l'><action name='ResizeRelative'><right>8</right></action></keybind>
 
     <!-- Keybindings for applications -->
     <keybind key="W-t"><action name="Execute"><command>urxvt</command></action></keybind>
@@ -234,11 +234,9 @@
         <action name="Focus"/>
         <action name="Raise"/>
       </mousebind>
-
       <mousebind button="A-Left" action="Drag">
         <action name="Move"/>
       </mousebind>
-
       <mousebind button="A-S-Left" action="Drag">
         <action name="Resize"/>
       </mousebind>
@@ -249,7 +247,29 @@
         <action name="ShowMenu"><menu>root-menu</menu></action>
       </mousebind>
     </context>
+
+    <context name="Client">
+      <mousebind button="Left" action="Press">
+        <action name="Focus"/>
+        <action name="Raise"/>
+      </mousebind>
+      <mousebind button="Middle" action="Press">
+        <action name="Focus"/>
+        <action name="Raise"/>
+      </mousebind>
+      <mousebind button="Right" action="Press">
+        <action name="Focus"/>
+        <action name="Raise"/>
+      </mousebind>
+    </context>
+
+    <context name="Root">
+      <mousebind button="Right" action="Press">
+        <action name="ShowMenu"><menu>root-menu</menu></action>
+      </mousebind>
+    </context>
   </mouse>
+
 
   <menu>
     <file>menu.xml</file>
@@ -264,7 +284,6 @@
       <decor>no</decor>
       <shade>no</shade>
     </application>
-
     <application name='Conky'>
       <layer>below</layer>
     </application>
