@@ -14,7 +14,7 @@ conky.config = {
   draw_outline = false,
   draw_shades = false,
   use_xft = true,
-  font = 'Inconsolata:size=12',
+  font = 'Ubuntu Mono:size=12',
   gap_x = 100,
   gap_y = 50,
   minimum_height = 5,
@@ -39,9 +39,9 @@ conky.config = {
 }
 
 conky.text = [[
-$alignc${font Inconsolata:size=60}${time %-H:%M:%S}${font}
-$alignc${font Inconsolata:size=30}${time %a %-d %b %Y}${font}
-$alignc${font Inconsolata:size=20}Desktop ${color white}${desktop}${color}${font}
+$alignc${font Ubuntu Mono:size=60}${time %-H:%M:%S}${font}
+$alignc${font Ubuntu Mono:size=30}${time %a %-d %b %Y}${font}
+$alignc${font Ubuntu Mono:size=20}Desktop ${color white}${desktop}${color}${font}
 
  ${color grey}Uptime:$color $uptime
    ${color grey}Freq:$color $freq MHz
