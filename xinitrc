@@ -20,6 +20,7 @@ init_session() {
   xrdb ~/.Xresources
   xmodmap ~/.Xmodmap
   xcompmgr &
+  conky &
   pulseaudio --start
   nitrogen --set-zoom-fill ~/jbn8I.jpg
 }
