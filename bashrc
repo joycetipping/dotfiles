@@ -6,6 +6,8 @@ hat_observe()  { :; }
 
 [[ -d ~/.bash ]] || git clone git@github.com:joycetipping/dotbash.git ~/.bash
 
+export TERM=rxvt-unicode
+
 source ~/.bash/init
 
 export GPG_TTY=`tty`
