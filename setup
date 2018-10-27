@@ -11,13 +11,14 @@ if [[ $1 != yes-really ]]; then
   exit 1
 fi
 
-cd "$(dirname "$0")"
+cd "$(dirname "$0")"  # cd into the directory of this script.
 for file in *; do
   if [[ "$file" != setup ]] && [[ "$file" != README.md ]]; then
-    mv -f "$HOME/.$file" "$HOME/.$file.original"
-    ln -s "$PWD/$file" "$HOME/.$file"
+    mv -f "$HOME/.$file" "$HOME/.$file.original"  # move the original
+    ln -s "$PWD/$file" "$HOME/.$file"  # link the file
   fi
 done
 
+# Openbox needs to go inside of ~/.config
 rm -rf ~/.config/openbox
 ln -s ~/.openbox ~/.config/openbox
