@@ -31,6 +31,8 @@ set listchars=tab:▸·,trail:·
 "Modeline
 set modeline
 set modelines=5
+"Fix highlighting
+highlight Search ctermfg=0 ctermbg=2
 
 let mapleader = " "
 
@@ -44,12 +46,13 @@ nnoremap <F7> :call ToggleTerminalCopyPaste()<CR>
 
 command Dws :%s/\s\+$// "Delete whitespace
 
-filetype plugin indent on
+filetype plugin on
 syntax on
-autocmd BufRead,BufNewFile *.tsv setlocal noexpandtab
+autocmd BufRead,BufNewFile *.tsv set noexpandtab
 autocmd BufRead,BufNewFile */journal/* set textwidth=100
 autocmd BufRead,BufNewFile passwords.* set textwidth=0
-autocmd FileType python setlocal shiftwidth=4 tabstop=4 foldcolumn=4
+autocmd FileType python set shiftwidth=4 tabstop=4 foldcolumn=4
+autocmd FileType javascript,html set textwidth=0
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "Functions
