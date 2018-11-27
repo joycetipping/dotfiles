@@ -69,7 +69,7 @@ alias u8="cd ../../../../../../../../"
 # Places
 alias blog="cd $HOME/projects/blog/"
 alias diary="cd $HOME/projects/life/diary/"
-alias dotfiles="cd $HOME/projects/dotfiles/"
+alias dots="cd $HOME/projects/dotfiles/"
 alias dreams="vim $HOME/projects/life/dreams/$(date '+%Y').txt"
 alias fubar="cd $HOME/projects/company/"
 alias journal="cd $HOME/projects/life/journal/"
