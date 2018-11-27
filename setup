@@ -22,3 +22,6 @@ done
 # Openbox needs to go inside of ~/.config
 rm -rf ~/.config/openbox
 ln -s ~/.openbox ~/.config/openbox
+# ssh-config needs to go to ~/.ssh/config
+rm -rf ~/.ssh/config
+ln -s ~/.ssh-config ~/.ssh/config
