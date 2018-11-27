@@ -12,6 +12,40 @@ source ~/.bash/init
 
 export GPG_TTY=`tty`
 
+
+# If we don't have a DISPLAY already, set it to :0
+# (in practice this happens if you don't have bashrc-xpra and you're sshing
+# somewhere without -X)
+export DISPLAY=${DISPLAY:-:0}
+
+shopt -s checkwinsize extglob
+
+umask 022
+
+export NODE_PATH="$HOME/.node:$NODE_PATH"
+
+# Environment variables
+export VISUAL="/usr/bin/vim"
+export EDITOR=$VISUAL
+export PS1='\[\033[1;32m\]\h\[\033[1;30m\]\W\[\033[0;0m\] '
+
+# ni configuration
+export NI_ROW_SORT_BUFFER=1024M
+export NI_ROW_SORT_COMPRESS=gzip
+export NI_ROW_SORT_PARALLEL=`cat /proc/cpuinfo | grep vendor_id | wc -l`
+
+export GNUTERM=wxt
+
+export LC_ALL=${LC_ALL:-C.UTF-8}
+
+if [[ $TERM == 'xterm' ]]; then
+  export TERM='xterm-color'
+fi
+
+if test -e ~/.dir_colors && which dircolors >& /dev/null; then
+  eval $(dircolors ~/.dir_colors)
+fi
+
 # Aliases {{{
 
 # Source any machine-specific aliases if we have them
@@ -60,42 +94,59 @@ alias pd='rlwrap perl -de1'
 
 # }}}
 
+# Programs {{{
 
-# If we don't have a DISPLAY already, set it to :0
-# (in practice this happens if you don't have bashrc-xpra and you're sshing
-# somewhere without -X)
-export DISPLAY=${DISPLAY:-:0}
+# BC
+# --
+export BC_ENV_ARGS="$HOME/.bcrc"
 
-shopt -s checkwinsize extglob
 
-umask 022
+# Exiftool
+# --------
+dates () {
+  # Print all EXIF date fields
+  for var in "$@";
+  do
+    echo "$var"
+    exiftool "$var" | grep -i 'date'
+    echo
+  done
+}
 
-export NODE_PATH="$HOME/.node:$NODE_PATH"
 
-# Environment variables
-export VISUAL="/usr/bin/vim"
-export EDITOR=$VISUAL
-export PS1='\[\033[1;32m\]\h\[\033[1;30m\]\W\[\033[0;0m\] '
+# R
+# -
+export R_LIBS="$home/.R:$R_LIBS"
 
-# ni configuration
-export NI_ROW_SORT_BUFFER=1024M
-export NI_ROW_SORT_COMPRESS=gzip
-export NI_ROW_SORT_PARALLEL=`cat /proc/cpuinfo | grep vendor_id | wc -l`
 
-export GNUTERM=wxt
+# Ruby
+# ----
+serve () {
+  port="${1:-3000}"
+  ruby -run -e httpd . -p $port
+}
 
-export LC_ALL=${LC_ALL:-C.UTF-8}
 
-if [[ $TERM == 'xterm' ]]; then
-  export TERM='xterm-color'
-fi
+# Miscellaneous
+# -------------
+count () {
+  # Count the number of files in the given directories
+  if [[ "$#" == "0" ]]
+  then
+    ls | wc -l
+  else
+    for var in "$@";
+    do
+      ls "$var" | wc -l
+    done
+  fi
+}
 
-if test -e ~/.dir_colors && which dircolors >& /dev/null; then
-  eval $(dircolors ~/.dir_colors)
-fi
+csum () {
+  # Sum the number of files in the given directories
+  count "$@" | awk '{s+=$1} END {print s}'
+}
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
-
-[[ $PWD == $HOME && -d $HOME/r ]] && cd $HOME/r
+# }}}
 
 true
