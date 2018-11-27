@@ -45,8 +45,8 @@
   <keyboard>
     <!-- General -->
     <chainQuitKey>C-g</chainQuitKey>
-    <keybind key='W-p'><action name='Execute'><command>synclient TouchpadOff=0</command></action></keybind>
-    <keybind key='W-S-p'><action name='Execute'><command>synclient TouchpadOff=1</command></action></keybind>
+    <keybind key='W-p'><action name='Execute'><command>synclient MaxTapTime=180</command></action></keybind>
+    <keybind key='W-S-p'><action name='Execute'><command>synclient MaxTapTime=0</command></action></keybind>
 
     <keybind key="W-Q"><action name="Execute"><command>xtrlock</command></action></keybind>
     <keybind key='W-Escape'><action name='Execute'><command>locksleep</command></action></keybind><!-- lock and suspend -->
