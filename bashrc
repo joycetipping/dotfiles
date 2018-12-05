@@ -4,7 +4,7 @@
 hat_identity() { :; }
 hat_observe()  { :; }
 
-[[ -d ~/.bash ]] || git clone git@github.com:joycetipping/dotbash.git ~/.bash
+[[ -d ~/.bash ]] || git clone https://github.com/joycetipping/dotbash.git ~/.bash
 
 export TERM=rxvt-unicode
 
