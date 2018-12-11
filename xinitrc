@@ -16,7 +16,8 @@ init_session() {
             PalmMinWidth=5 \
             PalmMinZ=100 \
             FingerHigh=45 \
-            FingerLow=35
+            FingerLow=35 \
+            MaxTapTime=0
   xrdb ~/.Xresources
   xmodmap ~/.Xmodmap
   xcompmgr &
