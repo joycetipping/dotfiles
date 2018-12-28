@@ -12,6 +12,8 @@ init_session() {
             HorizScrollDelta=-114 \
             RTCornerButton=0 \
             RBCornerButton=0 \
+            RightButtonAreaLeft=0 \
+            RightButtonAreaTop=0 \
             PalmDetect=1 \
             PalmMinWidth=5 \
             PalmMinZ=100 \
