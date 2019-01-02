@@ -91,6 +91,7 @@ alias bc="echo Starting bc -l;echo;bc -l"
 alias grep="grep --color"
 alias sus='sudo pm-suspend'
 alias pd='rlwrap perl -de1'
+alias audio='arecord -f cd -t raw | oggenc - -r -o ~/audio/`date +%Y.%m%d.%H%M%S`.ogg'
 
 # }}}
 
