@@ -117,6 +117,9 @@
     <!-- Keybindings for applications -->
     <keybind key="W-t"><action name="Execute"><command>urxvt</command></action></keybind>
     <keybind key="W-w"><action name="Execute"><command>chromium-browser</command></action></keybind>
+    <keybind key="W-S-w"><action name="Execute"><command>firefox</command></action></keybind>
+    <keybind key="W-b"><action name="Execute"><command>io.elementary.files</command></action></keybind>
+    <keybind key="W-S-b"><action name="Execute"><command>nautilus --no-desktop</command></action></keybind>
 
     <!-- Keybindings for desktop switching -->
     <keybind key='W-bracketleft'><action name='GoToDesktop'><to>23</to></action></keybind>
