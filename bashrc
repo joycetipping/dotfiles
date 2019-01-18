@@ -75,6 +75,7 @@ alias fubar="cd $HOME/projects/company/"
 alias journal="cd $HOME/projects/life/journal/"
 alias notes="cd $HOME/projects/notes/"
 alias projects="cd $HOME/projects/"
+alias safe="cd $HOME/projects/safe/"
 alias website="cd $HOME/projects/joycetipping.com/"
 
 # Home
@@ -87,11 +88,13 @@ alias d="date"
 alias now="date '+%A %-d %B %Y %H:%M:%S %Z'"
 
 # Other
+alias audio='arecord -f cd -t raw | oggenc - -r -o ~/audio/`date +%Y.%m%d.%H%M%S`.ogg'
 alias bc="echo Starting bc -l;echo;bc -l"
 alias grep="grep --color"
-alias sus='sudo pm-suspend'
 alias pd='rlwrap perl -de1'
-alias audio='arecord -f cd -t raw | oggenc - -r -o ~/audio/`date +%Y.%m%d.%H%M%S`.ogg'
+alias pyserver='python -m SimpleHTTPServer 8080'
+alias sizes='du -sh | sort -h'
+alias sus='sudo pm-suspend'
 
 # }}}
 
@@ -122,7 +125,7 @@ export R_LIBS="$home/.R:$R_LIBS"
 
 # Ruby
 # ----
-serve () {
+rubyserver () {
   port="${1:-3000}"
   ruby -run -e httpd . -p $port
 }
