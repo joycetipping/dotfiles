@@ -6,6 +6,8 @@ hat_observe()  { :; }
 
 [[ -d ~/.bash ]] || git clone https://github.com/joycetipping/dotbash.git ~/.bash
 
+export TZ='/usr/share/zoneinfo/America/Denver'
+
 export TERM=rxvt-unicode
 
 source ~/.bash/init
