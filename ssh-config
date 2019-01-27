@@ -195,3 +195,196 @@ Host jr63
 Host jr64
   HostName 10.35.0.2
   Port 2185
+
+Host jro1
+  HostName rockhopper
+  Port 2122
+Host jro2
+  HostName rockhopper
+  Port 2123
+Host jro3
+  HostName rockhopper
+  Port 2124
+Host jro4
+  HostName rockhopper
+  Port 2125
+Host jro5
+  HostName rockhopper
+  Port 2126
+Host jro6
+  HostName rockhopper
+  Port 2127
+Host jro7
+  HostName rockhopper
+  Port 2128
+Host jro8
+  HostName rockhopper
+  Port 2129
+Host jro9
+  HostName rockhopper
+  Port 2130
+Host jro10
+  HostName rockhopper
+  Port 2131
+Host jro11
+  HostName rockhopper
+  Port 2132
+Host jro12
+  HostName rockhopper
+  Port 2133
+Host jro13
+  HostName rockhopper
+  Port 2134
+Host jro14
+  HostName rockhopper
+  Port 2135
+Host jro15
+  HostName rockhopper
+  Port 2136
+Host jro16
+  HostName rockhopper
+  Port 2137
+Host jro17
+  HostName rockhopper
+  Port 2138
+Host jro18
+  HostName rockhopper
+  Port 2139
+Host jro19
+  HostName rockhopper
+  Port 2140
+Host jro20
+  HostName rockhopper
+  Port 2141
+Host jro21
+  HostName rockhopper
+  Port 2142
+Host jro22
+  HostName rockhopper
+  Port 2143
+Host jro23
+  HostName rockhopper
+  Port 2144
+Host jro24
+  HostName rockhopper
+  Port 2145
+Host jro25
+  HostName rockhopper
+  Port 2146
+Host jro26
+  HostName rockhopper
+  Port 2147
+Host jro27
+  HostName rockhopper
+  Port 2148
+Host jro28
+  HostName rockhopper
+  Port 2149
+Host jro29
+  HostName rockhopper
+  Port 2150
+Host jro30
+  HostName rockhopper
+  Port 2151
+Host jro31
+  HostName rockhopper
+  Port 2152
+Host jro32
+  HostName rockhopper
+  Port 2153
+Host jro33
+  HostName rockhopper
+  Port 2154
+Host jro34
+  HostName rockhopper
+  Port 2155
+Host jro35
+  HostName rockhopper
+  Port 2156
+Host jro36
+  HostName rockhopper
+  Port 2157
+Host jro37
+  HostName rockhopper
+  Port 2158
+Host jro38
+  HostName rockhopper
+  Port 2159
+Host jro39
+  HostName rockhopper
+  Port 2160
+Host jro40
+  HostName rockhopper
+  Port 2161
+Host jro41
+  HostName rockhopper
+  Port 2162
+Host jro42
+  HostName rockhopper
+  Port 2163
+Host jro43
+  HostName rockhopper
+  Port 2164
+Host jro44
+  HostName rockhopper
+  Port 2165
+Host jro45
+  HostName rockhopper
+  Port 2166
+Host jro46
+  HostName rockhopper
+  Port 2167
+Host jro47
+  HostName rockhopper
+  Port 2168
+Host jro48
+  HostName rockhopper
+  Port 2169
+Host jro49
+  HostName rockhopper
+  Port 2170
+Host jro50
+  HostName rockhopper
+  Port 2171
+Host jro51
+  HostName rockhopper
+  Port 2172
+Host jro52
+  HostName rockhopper
+  Port 2173
+Host jro53
+  HostName rockhopper
+  Port 2174
+Host jro54
+  HostName rockhopper
+  Port 2175
+Host jro55
+  HostName rockhopper
+  Port 2176
+Host jro56
+  HostName rockhopper
+  Port 2177
+Host jro57
+  HostName rockhopper
+  Port 2178
+Host jro58
+  HostName rockhopper
+  Port 2179
+Host jro59
+  HostName rockhopper
+  Port 2180
+Host jro60
+  HostName rockhopper
+  Port 2181
+Host jro61
+  HostName rockhopper
+  Port 2182
+Host jro62
+  HostName rockhopper
+  Port 2183
+Host jro63
+  HostName rockhopper
+  Port 2184
+Host jro64
+  HostName rockhopper
+  Port 2185
