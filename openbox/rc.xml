@@ -93,12 +93,12 @@
     <keybind key='W-8'><action name='MoveResizeTo'><y>center</y></action></keybind>
     <keybind key='W-9'><action name='MoveResizeTo'><y>-0</y></action></keybind>
 
-    <keybind key='W-0'><action name='MoveResizeTo'><width>800</width></action></keybind>
-    <keybind key='W-minus'><action name='MoveResizeTo'><width>533</width></action></keybind>
-    <keybind key='W-equal'><action name='MoveResizeTo'><width>1067</width></action></keybind>
-    <keybind key='W-S-0'><action name='MoveResizeTo'><height>450</height></action></keybind>
-    <keybind key='W-S-minus'><action name='MoveResizeTo'><height>300</height></action></keybind>
-    <keybind key='W-S-equal'><action name='MoveResizeTo'><height>600</height></action></keybind>
+    <keybind key='W-0'><action name='MoveResizeTo'><width>1920</width></action></keybind>
+    <keybind key='W-minus'><action name='MoveResizeTo'><width>1280</width></action></keybind>
+    <keybind key='W-equal'><action name='MoveResizeTo'><width>2560</width></action></keybind>
+    <keybind key='W-S-0'><action name='MoveResizeTo'><height>1080</height></action></keybind>
+    <keybind key='W-S-minus'><action name='MoveResizeTo'><height>720</height></action></keybind>
+    <keybind key='W-S-equal'><action name='MoveResizeTo'><height>1440</height></action></keybind>
 
     <keybind key='W-C-h'><action name='MoveRelative'><x>-8</x><y>0</y></action></keybind>
     <keybind key='W-C-j'><action name='MoveRelative'><x>0</x><y>6</y></action></keybind>

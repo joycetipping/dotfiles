@@ -25,7 +25,7 @@ init_session() {
   xcompmgr &
   conky &
   pulseaudio --start
-  nitrogen --set-zoom-fill ~/jbn8I.jpg
+  feh --bg-fill ~/projects/dotfiles/backgrounds/handwriting.jpg
 }
 
 sleep 2 && init_session
