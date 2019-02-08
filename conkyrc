@@ -14,9 +14,9 @@ conky.config = {
   draw_outline = false,
   draw_shades = false,
   use_xft = true,
-  font = 'Ubuntu Mono:size=12',
-  gap_x = 100,
-  gap_y = 50,
+  font = 'Ubuntu Mono:size=24',
+  gap_x = 200,
+  gap_y = 100,
   minimum_height = 5,
   minimum_width = 5,
   net_avg_samples = 2,
@@ -39,9 +39,9 @@ conky.config = {
 }
 
 conky.text = [[
-$alignc${font Ubuntu Mono:size=60}${time %-H:%M:%S}${font}
-$alignc${font Ubuntu Mono:size=30}${time %a %-d %b %Y}${font}
-$alignc${font Ubuntu Mono:size=20}Desktop ${color white}${desktop}${color}${font}
+$alignc${font Ubuntu Mono:size=120}${time %-H:%M:%S}${font}
+$alignc${font Ubuntu Mono:size=60}${time %a %-d %b %Y}${font}
+$alignc${font Ubuntu Mono:size=40}Desktop ${color white}${desktop}${color}${font}
 
  ${color grey}Uptime:$color $uptime
    ${color grey}Freq:$color $freq MHz
