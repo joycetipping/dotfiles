@@ -4,7 +4,7 @@ wm_pid=$!
 
 init_session() {
   xset r rate 300 60
-  setlayout 0 10 10 0
+  setlayout 0 15 15 0
   xinput set-prop 13 'libinput Tapping Enabled' 1
   xinput set-prop 13 'libinput Tapping Drag Enabled' 1
   xinput set-prop 13 'libinput Natural Scrolling Enabled' 1

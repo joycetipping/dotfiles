@@ -24,8 +24,8 @@
   </theme>
 
   <desktops>
-    <number>100</number>
-    <firstdesk>45</firstdesk>
+    <number>225</number>
+    <firstdesk>113</firstdesk>
     <popupTime>1000</popupTime>
   </desktops>
 
@@ -48,35 +48,39 @@
     <keybind key='W-p'><action name='Execute'><command>synclient MaxTapTime=180</command></action></keybind>
     <keybind key='W-S-p'><action name='Execute'><command>synclient MaxTapTime=0</command></action></keybind>
 
-    <keybind key="W-Q"><action name="Execute"><command>xtrlock</command></action></keybind>
-    <keybind key='W-Escape'><action name='Execute'><command>locksleep</command></action></keybind><!-- lock and suspend -->
+    <keybind key="W-S-x"><action name="Execute"><command>xtrlock</command></action></keybind>
+    <keybind key='W-S-z'><action name='Execute'><command>locksleep</command></action></keybind><!-- lock and suspend -->
+
+    <keybind key='XF86MonBrightnessUp'><action name='Execute'><command>backlight +1500</command></action></keybind>
+    <keybind key='XF86MonBrightnessDown'><action name='Execute'><command>backlight -1500</command></action></keybind>
+    <keybind key='S-XF86MonBrightnessUp'><action name='Execute'><command>backlight +500</command></action></keybind>
+    <keybind key='S-XF86MonBrightnessDown'><action name='Execute'><command>backlight -500</command></action></keybind>
+    <keybind key='W-m'><action name='Execute'><command>backlight 7500</command></action></keybind>
+    <keybind key='W-n'><action name='Execute'><command>backlight 500</command></action></keybind>
 
     <!--
-    <keybind key='XF86MonBrightnessUp'><action name='Execute'><command>backlight +100</command></action></keybind>
-    <keybind key='XF86MonBrightnessDown'><action name='Execute'><command>backlight -100</command></action></keybind>
-    <keybind key='S-XF86MonBrightnessUp'><action name='Execute'><command>backlight +5</command></action></keybind>
-    <keybind key='S-XF86MonBrightnessDown'><action name='Execute'><command>backlight -5</command></action></keybind>
-    -->
-    <keybind key='W-m'><action name='Execute'><command>backlight 4437</command></action></keybind>
-    <keybind key='W-n'><action name='Execute'><command>backlight 0</command></action></keybind>
-
     <keybind key='XF86AudioRaiseVolume'><action name='Execute'><command>vol-delta-pa 1024</command></action></keybind>
     <keybind key='XF86AudioLowerVolume'><action name='Execute'><command>vol-delta-pa -1024</command></action></keybind>
     <keybind key='S-XF86AudioRaiseVolume'><action name='Execute'><command>vol-delta-pa 4096</command></action></keybind>
     <keybind key='S-XF86AudioLowerVolume'><action name='Execute'><command>vol-delta-pa -4096</command></action></keybind>
     <keybind key='XF86AudioMute'><action name='Execute'><command>vol-mute-pa</command></action></keybind>
+    -->
 
     <!-- Keybindings for menus and dialogs -->
     <keybind key="A-F2"><action name="Execute"><command>gmrun</command></action></keybind>
     <keybind key="W-space"><action name="Execute"><command>gmrun</command></action></keybind>
+    <keybind key="A-space"><action name="Execute"><command>gmrun</command></action></keybind>
     <keybind key="S-W-space"><action name="ShowMenu"><menu>client-menu</menu></action></keybind>
+    <keybind key="S-A-space"><action name="ShowMenu"><menu>client-menu</menu></action></keybind>
     <keybind key="C-W-A-space"><action name="ShowMenu"><menu>root-menu</menu></action></keybind>
 
     <!-- Keybindings for windows, optimized to 1600x900 screen -->
     <keybind key="A-F4"><action name="Close"/></keybind>
 
-    <keybind key='W-s'><action name='ToggleOmnipresent'></action></keybind>
-    <keybind key="W-d"><action name="ToggleShowDesktop"/></keybind>
+    <keybind key="W-S-s"><action name='ToggleOmnipresent'></action></keybind>
+    <keybind key="W-S-d"><action name="ToggleShowDesktop"/></keybind>
+    <keybind key="W-slash"><action name="ToggleShowDesktop"/></keybind>
+    <keybind key="W-S-slash"><action name="ToggleShowDesktop"/></keybind>
     <keybind key='W-f'><action name='ToggleMaximize' /></keybind>
     <keybind key='W-v'><action name='ToggleMaximize'><direction>vertical</direction></action></keybind>
     <keybind key='W-g'><action name='ToggleMaximize'><direction>horizontal</direction></action></keybind>
@@ -116,17 +120,20 @@
 
     <!-- Keybindings for applications -->
     <keybind key="W-t"><action name="Execute"><command>urxvt</command></action></keybind>
-    <keybind key="W-w"><action name="Execute"><command>chromium-browser</command></action></keybind>
-    <keybind key="W-S-w"><action name="Execute"><command>firefox</command></action></keybind>
-    <keybind key="W-b"><action name="Execute"><command>io.elementary.files</command></action></keybind>
-    <keybind key="W-S-b"><action name="Execute"><command>nautilus --no-desktop</command></action></keybind>
+    <keybind key="W-S-w"><action name="Execute"><command>chromium-browser</command></action></keybind>
+    <keybind key="W-S-f"><action name="Execute"><command>io.elementary.files</command></action></keybind>
+    <keybind key="A-S-f"><action name="Execute"><command>nautilus --no-desktop</command></action></keybind>
 
     <!-- Keybindings for desktop switching -->
-    <keybind key='W-bracketleft'><action name='GoToDesktop'><to>23</to></action></keybind>
-    <keybind key='W-bracketright'><action name='GoToDesktop'><to>28</to></action></keybind>
-    <keybind key='W-backslash'><action name='GoToDesktop'><to>45</to></action></keybind>
-    <keybind key='W-semicolon'><action name='GoToDesktop'><to>73</to></action></keybind>
-    <keybind key='W-apostrophe'><action name='GoToDesktop'><to>78</to></action></keybind>
+    <keybind key='W-q'><action name='GoToDesktop'><to>33</to></action></keybind>
+    <keybind key='W-w'><action name='GoToDesktop'><to>38</to></action></keybind>
+    <keybind key='W-e'><action name='GoToDesktop'><to>43</to></action></keybind>
+    <keybind key='W-a'><action name='GoToDesktop'><to>108</to></action></keybind>
+    <keybind key='W-s'><action name='GoToDesktop'><to>113</to></action></keybind>
+    <keybind key='W-d'><action name='GoToDesktop'><to>118</to></action></keybind>
+    <keybind key='W-z'><action name='GoToDesktop'><to>183</to></action></keybind>
+    <keybind key='W-x'><action name='GoToDesktop'><to>188</to></action></keybind>
+    <keybind key='W-c'><action name='GoToDesktop'><to>193</to></action></keybind>
 
     <keybind key="W-h"><action name="DesktopLeft"/></keybind>
     <keybind key="W-l"><action name="DesktopRight"/></keybind>
