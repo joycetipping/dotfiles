@@ -12,7 +12,7 @@ init_session() {
   xinput set-prop 13 'libinput Accel Speed' 1.0
   xinput set-prop 13 'libinput Horizontal Scroll Enabled' 1
   xrdb ~/.Xresources
-  xmodmap ~/.Xmodmap
+  #xmodmap ~/.Xmodmap
   xcompmgr &
   conky &
   pulseaudio --start

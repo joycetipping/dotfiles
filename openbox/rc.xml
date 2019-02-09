@@ -77,8 +77,8 @@
     <!-- Keybindings for windows, optimized to 1600x900 screen -->
     <keybind key="A-F4"><action name="Close"/></keybind>
 
-    <keybind key="W-S-s"><action name='ToggleOmnipresent'></action></keybind>
-    <keybind key="W-S-d"><action name="ToggleShowDesktop"/></keybind>
+    <keybind key="W-o"><action name='ToggleOmnipresent'></action></keybind>
+    <keybind key="W-q"><action name="ToggleShowDesktop"/></keybind>
     <keybind key="W-slash"><action name="ToggleShowDesktop"/></keybind>
     <keybind key="W-S-slash"><action name="ToggleShowDesktop"/></keybind>
     <keybind key='W-f'><action name='ToggleMaximize' /></keybind>
@@ -123,6 +123,8 @@
     <keybind key="W-S-w"><action name="Execute"><command>chromium-browser</command></action></keybind>
     <keybind key="W-S-f"><action name="Execute"><command>io.elementary.files</command></action></keybind>
     <keybind key="A-S-f"><action name="Execute"><command>nautilus --no-desktop</command></action></keybind>
+    <keybind key='Print'><action name='Execute'><command>shutter -f</command></action></keybind>
+    <keybind key='S-Print'><action name='Execute'><command>shutter -w</command></action></keybind>
 
     <!-- Keybindings for desktop switching -->
     <keybind key='W-q'><action name='GoToDesktop'><to>33</to></action></keybind>
@@ -140,20 +142,10 @@
     <keybind key="W-k"><action name="DesktopUp"/></keybind>
     <keybind key="W-j"><action name="DesktopDown"/></keybind>
 
-    <keybind key="W-Left"><action name="DesktopLeft"/></keybind>
-    <keybind key="W-Right"><action name="DesktopRight"/></keybind>
-    <keybind key="W-Up"><action name="DesktopUp"/></keybind>
-    <keybind key="W-Down"><action name="DesktopDown"/></keybind>
-
     <keybind key="S-W-h"><action name="SendToDesktopLeft"/></keybind>
     <keybind key="S-W-l"><action name="SendToDesktopRight"/></keybind>
     <keybind key="S-W-k"><action name="SendToDesktopUp"/></keybind>
     <keybind key="S-W-j"><action name="SendToDesktopDown"/></keybind>
-
-    <keybind key="S-W-Left"><action name="SendToDesktopLeft"/></keybind>
-    <keybind key="S-W-Right"><action name="SendToDesktopRight"/></keybind>
-    <keybind key="S-W-Up"><action name="SendToDesktopUp"/></keybind>
-    <keybind key="S-W-Down"><action name="SendToDesktopDown"/></keybind>
 
     <!-- Keybindings for window switching -->
     <keybind key="W-Tab"><action name="NextWindow"><allDesktops>yes</allDesktops></action></keybind>
@@ -177,12 +169,6 @@
       </mousebind>
       <mousebind button="A-S-Left" action="Drag">
         <action name="Resize"/>
-      </mousebind>
-    </context>
-
-    <context name="Root">
-      <mousebind button="Right" action="Press">
-        <action name="ShowMenu"><menu>root-menu</menu></action>
       </mousebind>
     </context>
 
