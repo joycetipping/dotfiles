@@ -41,7 +41,10 @@ conky.config = {
 conky.text = [[
 $alignc${font Ubuntu Mono:size=120}${time %-H:%M:%S}${font}
 $alignc${font Ubuntu Mono:size=60}${time %a %-d %b %Y}${font}
-$alignc${font Ubuntu Mono:size=40}Desktop ${color white}${desktop}${color}${font}
+
+${font Ubuntu Mono:size=40}    Desktop ${color white}${desktop}${color}${font}
+${font Ubuntu Mono:size=40} Brightness ${color white}${exec backlight %} / ${exec backlight}${color}${font}
+${font Ubuntu Mono:size=40}     Volume ${color white}${exec vol-get-pa %}${if_match "yes" == "${exec vol-get-pa mute}"} / mute${endif}${color}${font}
 
  ${color grey}Uptime:$color $uptime
    ${color grey}Freq:$color $freq MHz
