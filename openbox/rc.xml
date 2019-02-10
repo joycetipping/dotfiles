@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 
-<openbox_config xmlns="http://openbox.org/3.4/rc">
+<openbox_config xmlns='http://openbox.org/3.4/rc'>
   <resistance>
     <strength>10</strength>
     <screen_edge_strength>20</screen_edge_strength>
@@ -48,15 +48,15 @@
     <keybind key='W-p'><action name='Execute'><command>synclient MaxTapTime=180</command></action></keybind>
     <keybind key='W-S-p'><action name='Execute'><command>synclient MaxTapTime=0</command></action></keybind>
 
-    <keybind key="W-S-x"><action name="Execute"><command>xtrlock</command></action></keybind>
+    <keybind key='W-S-x'><action name='Execute'><command>xtrlock</command></action></keybind>
     <keybind key='W-S-z'><action name='Execute'><command>locksleep</command></action></keybind><!-- lock and suspend -->
 
-    <keybind key='XF86MonBrightnessUp'><action name='Execute'><command>backlight +1500</command></action></keybind>
-    <keybind key='XF86MonBrightnessDown'><action name='Execute'><command>backlight -1500</command></action></keybind>
-    <keybind key='S-XF86MonBrightnessUp'><action name='Execute'><command>backlight +500</command></action></keybind>
-    <keybind key='S-XF86MonBrightnessDown'><action name='Execute'><command>backlight -500</command></action></keybind>
+    <keybind key='XF86MonBrightnessUp'><action name='Execute'><command>backlight +750</command></action></keybind>
+    <keybind key='XF86MonBrightnessDown'><action name='Execute'><command>backlight -750</command></action></keybind>
+    <keybind key='S-XF86MonBrightnessUp'><action name='Execute'><command>backlight +150</command></action></keybind>
+    <keybind key='S-XF86MonBrightnessDown'><action name='Execute'><command>backlight -150</command></action></keybind>
     <keybind key='W-m'><action name='Execute'><command>backlight 7500</command></action></keybind>
-    <keybind key='W-n'><action name='Execute'><command>backlight 500</command></action></keybind>
+    <keybind key='W-n'><action name='Execute'><command>backlight 150</command></action></keybind>
 
     <!--
     <keybind key='XF86AudioRaiseVolume'><action name='Execute'><command>vol-delta-pa 1024</command></action></keybind>
@@ -67,20 +67,21 @@
     -->
 
     <!-- Keybindings for menus and dialogs -->
-    <keybind key="A-F2"><action name="Execute"><command>gmrun</command></action></keybind>
-    <keybind key="W-space"><action name="Execute"><command>gmrun</command></action></keybind>
-    <keybind key="A-space"><action name="Execute"><command>gmrun</command></action></keybind>
-    <keybind key="S-W-space"><action name="ShowMenu"><menu>client-menu</menu></action></keybind>
-    <keybind key="S-A-space"><action name="ShowMenu"><menu>client-menu</menu></action></keybind>
-    <keybind key="C-W-A-space"><action name="ShowMenu"><menu>root-menu</menu></action></keybind>
+    <keybind key='A-F2'><action name='Execute'><command>gmrun</command></action></keybind>
+    <keybind key='W-space'><action name='Execute'><command>gmrun</command></action></keybind>
+    <keybind key='A-space'><action name='Execute'><command>gmrun</command></action></keybind>
+    <keybind key='S-W-space'><action name='ShowMenu'><menu>client-menu</menu></action></keybind>
+    <keybind key='S-A-space'><action name='ShowMenu'><menu>client-menu</menu></action></keybind>
+    <keybind key='C-W-A-space'><action name='ShowMenu'><menu>root-menu</menu></action></keybind>
 
     <!-- Keybindings for windows, optimized to 1600x900 screen -->
-    <keybind key="A-F4"><action name="Close"/></keybind>
+    <keybind key='A-F4'><action name='Close'/></keybind>
 
-    <keybind key="W-o"><action name='ToggleOmnipresent'></action></keybind>
-    <keybind key="W-q"><action name="ToggleShowDesktop"/></keybind>
-    <keybind key="W-slash"><action name="ToggleShowDesktop"/></keybind>
-    <keybind key="W-S-slash"><action name="ToggleShowDesktop"/></keybind>
+    <keybind key='W-o'><action name='ToggleOmnipresent'></action></keybind>
+    <keybind key='W-q'><action name='ToggleShowDesktop'/></keybind>
+    <keybind key='S-W-d'><action name='ToggleShowDesktop'/></keybind>
+    <keybind key='W-slash'><action name='ToggleShowDesktop'/></keybind>
+    <keybind key='W-S-slash'><action name='ToggleShowDesktop'/></keybind>
     <keybind key='W-f'><action name='ToggleMaximize' /></keybind>
     <keybind key='W-v'><action name='ToggleMaximize'><direction>vertical</direction></action></keybind>
     <keybind key='W-g'><action name='ToggleMaximize'><direction>horizontal</direction></action></keybind>
@@ -119,10 +120,10 @@
     <keybind key='A-S-l'><action name='ResizeRelative'><left>-8</left></action></keybind>
 
     <!-- Keybindings for applications -->
-    <keybind key="W-t"><action name="Execute"><command>urxvt</command></action></keybind>
-    <keybind key="W-S-w"><action name="Execute"><command>chromium-browser</command></action></keybind>
-    <keybind key="W-S-f"><action name="Execute"><command>io.elementary.files</command></action></keybind>
-    <keybind key="A-S-f"><action name="Execute"><command>nautilus --no-desktop</command></action></keybind>
+    <keybind key='W-t'><action name='Execute'><command>urxvt</command></action></keybind>
+    <keybind key='W-S-w'><action name='Execute'><command>chromium-browser</command></action></keybind>
+    <keybind key='W-S-f'><action name='Execute'><command>io.elementary.files</command></action></keybind>
+    <keybind key='A-S-f'><action name='Execute'><command>nautilus --no-desktop</command></action></keybind>
     <keybind key='Print'><action name='Execute'><command>shutter -f</command></action></keybind>
     <keybind key='S-Print'><action name='Execute'><command>shutter -w</command></action></keybind>
 
@@ -137,21 +138,21 @@
     <keybind key='W-x'><action name='GoToDesktop'><to>188</to></action></keybind>
     <keybind key='W-c'><action name='GoToDesktop'><to>193</to></action></keybind>
 
-    <keybind key="W-h"><action name="DesktopLeft"/></keybind>
-    <keybind key="W-l"><action name="DesktopRight"/></keybind>
-    <keybind key="W-k"><action name="DesktopUp"/></keybind>
-    <keybind key="W-j"><action name="DesktopDown"/></keybind>
+    <keybind key='W-h'><action name='DesktopLeft'/></keybind>
+    <keybind key='W-l'><action name='DesktopRight'/></keybind>
+    <keybind key='W-k'><action name='DesktopUp'/></keybind>
+    <keybind key='W-j'><action name='DesktopDown'/></keybind>
 
-    <keybind key="S-W-h"><action name="SendToDesktopLeft"/></keybind>
-    <keybind key="S-W-l"><action name="SendToDesktopRight"/></keybind>
-    <keybind key="S-W-k"><action name="SendToDesktopUp"/></keybind>
-    <keybind key="S-W-j"><action name="SendToDesktopDown"/></keybind>
+    <keybind key='S-W-h'><action name='SendToDesktopLeft'/></keybind>
+    <keybind key='S-W-l'><action name='SendToDesktopRight'/></keybind>
+    <keybind key='S-W-k'><action name='SendToDesktopUp'/></keybind>
+    <keybind key='S-W-j'><action name='SendToDesktopDown'/></keybind>
 
     <!-- Keybindings for window switching -->
-    <keybind key="W-Tab"><action name="NextWindow"><allDesktops>yes</allDesktops></action></keybind>
-    <keybind key="W-S-Tab"><action name="PreviousWindow"><allDesktops>yes</allDesktops></action></keybind>
-    <keybind key="A-Tab"><action name="NextWindow"/></keybind>
-    <keybind key="A-S-Tab"><action name="PreviousWindow"/></keybind>
+    <keybind key='W-Tab'><action name='NextWindow'><allDesktops>yes</allDesktops></action></keybind>
+    <keybind key='W-S-Tab'><action name='PreviousWindow'><allDesktops>yes</allDesktops></action></keybind>
+    <keybind key='A-Tab'><action name='NextWindow'/></keybind>
+    <keybind key='A-S-Tab'><action name='PreviousWindow'/></keybind>
   </keyboard>
 
   <mouse>
@@ -159,37 +160,37 @@
     <doubleClickTime>200</doubleClickTime>
     <screenEdgeWarpTime>0</screenEdgeWarpTime><!-- disable desktop flipping when dragging windows -->
 
-    <context name="Frame">
-      <mousebind button="A-Left" action="Press">
-        <action name="Focus"/>
-        <action name="Raise"/>
+    <context name='Frame'>
+      <mousebind button='A-Left' action='Press'>
+        <action name='Focus'/>
+        <action name='Raise'/>
       </mousebind>
-      <mousebind button="A-Left" action="Drag">
-        <action name="Move"/>
+      <mousebind button='A-Left' action='Drag'>
+        <action name='Move'/>
       </mousebind>
-      <mousebind button="A-S-Left" action="Drag">
-        <action name="Resize"/>
-      </mousebind>
-    </context>
-
-    <context name="Client">
-      <mousebind button="Left" action="Press">
-        <action name="Focus"/>
-        <action name="Raise"/>
-      </mousebind>
-      <mousebind button="Middle" action="Press">
-        <action name="Focus"/>
-        <action name="Raise"/>
-      </mousebind>
-      <mousebind button="Right" action="Press">
-        <action name="Focus"/>
-        <action name="Raise"/>
+      <mousebind button='A-S-Left' action='Drag'>
+        <action name='Resize'/>
       </mousebind>
     </context>
 
-    <context name="Root">
-      <mousebind button="Right" action="Press">
-        <action name="ShowMenu"><menu>root-menu</menu></action>
+    <context name='Client'>
+      <mousebind button='Left' action='Press'>
+        <action name='Focus'/>
+        <action name='Raise'/>
+      </mousebind>
+      <mousebind button='Middle' action='Press'>
+        <action name='Focus'/>
+        <action name='Raise'/>
+      </mousebind>
+      <mousebind button='Right' action='Press'>
+        <action name='Focus'/>
+        <action name='Raise'/>
+      </mousebind>
+    </context>
+
+    <context name='Root'>
+      <mousebind button='Right' action='Press'>
+        <action name='ShowMenu'><menu>root-menu</menu></action>
       </mousebind>
     </context>
   </mouse>
