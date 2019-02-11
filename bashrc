@@ -5,7 +5,7 @@
 [[ $- != *i* ]] && return
 
 # Adjust the path
-[[ -d "$home/bin" ]] && PATH="$PATH:$home/bin"  # Include user's private bin
+[[ -d "$HOME/bin" ]] && PATH="$PATH:$HOME/bin"  # Include user's private bin
 
 # Terminal settings
 export EDITOR="/usr/bin/vim"
@@ -15,11 +15,12 @@ export TZ='/usr/share/zoneinfo/America/Denver'  # Set time zone to MST
 export GDK_SCALE=2  # Scale all gtk-3.0 applications for 4k monitor
 
 # Source Spencer's bash prompt
-[[ -d ~/.bash ]] || git clone git@github.com:joycetipping/dotbash.git "$home/.bash"
-source "$home/.bash/init"
+[[ -d ~/.bash ]] || git clone git@github.com:joycetipping/dotbash.git "$HOME/.bash"
+source "$HOME/.bash/init"
 
 if test -e ~/.dir_colors && which dircolors >& /dev/null; then
   eval $(dircolors ~/.dir_colors)
+fi
 
 
 # Aliases {{{
@@ -97,7 +98,7 @@ dates () {
 
 # R
 # -
-export R_LIBS="$home/.R:$R_LIBS"
+export R_LIBS="$HOME/.R:$R_LIBS"
 
 
 # Ruby
