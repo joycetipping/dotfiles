@@ -1,52 +1,26 @@
 #!/bin/bash
-[ -z "$PS1" ] && return
 
-hat_identity() { :; }
-hat_observe()  { :; }
+# If not running interactively, don't do anything. This prevents these
+# configurations from being loaded when bash is in scripting mode.
+[[ $- != *i* ]] && return
 
-[[ -d ~/.bash ]] || git clone https://github.com/joycetipping/dotbash.git ~/.bash
+# Adjust the path
+[[ -d "$home/bin" ]] && PATH="$PATH:$home/bin"  # Include user's private bin
 
-export TZ='/usr/share/zoneinfo/America/Denver'
-
-export TERM=rxvt-unicode
-
-source ~/.bash/init
-
-export GPG_TTY=`tty`
-
-
-# If we don't have a DISPLAY already, set it to :0
-# (in practice this happens if you don't have bashrc-xpra and you're sshing
-# somewhere without -X)
-export DISPLAY=${DISPLAY:-:0}
-
-shopt -s checkwinsize extglob
-
-umask 022
-
-export NODE_PATH="$HOME/.node:$NODE_PATH"
-
-# Environment variables
+# Terminal settings
+export EDITOR="/usr/bin/vim"
 export VISUAL="/usr/bin/vim"
-export EDITOR=$VISUAL
-export PS1='\[\033[1;32m\]\h\[\033[1;30m\]\W\[\033[0;0m\] '
+export TERM='xterm-256color'
+export TZ='/usr/share/zoneinfo/America/Denver'  # Set time zone to MST
+export GDK_SCALE=2  # Scale all gtk-3.0 applications for 4k monitor
 
-# ni configuration
-export NI_ROW_SORT_BUFFER=1024M
-export NI_ROW_SORT_COMPRESS=gzip
-export NI_ROW_SORT_PARALLEL=`cat /proc/cpuinfo | grep vendor_id | wc -l`
-
-export GNUTERM=wxt
-
-export LC_ALL=${LC_ALL:-C.UTF-8}
-
-if [[ $TERM == 'xterm' ]]; then
-  export TERM='xterm-color'
-fi
+# Source Spencer's bash prompt
+[[ -d ~/.bash ]] || git clone git@github.com:joycetipping/dotbash.git "$home/.bash"
+source "$home/.bash/init"
 
 if test -e ~/.dir_colors && which dircolors >& /dev/null; then
   eval $(dircolors ~/.dir_colors)
-fi
+
 
 # Aliases {{{
 
