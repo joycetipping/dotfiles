@@ -1,2 +1,6 @@
-! Map PrtSc to Window on Linux.
+! Map PrtSc to Window.
 ! keycode 107 = Super_R
+
+
+! Map Insert to Window.
+keycode 118 = Super_R
