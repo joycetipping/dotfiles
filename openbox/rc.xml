@@ -45,22 +45,20 @@
   <keyboard>
     <!-- General -->
     <chainQuitKey>C-g</chainQuitKey>
-    <keybind key='W-p'><action name='Execute'><command>synclient MaxTapTime=180</command></action></keybind>
-    <keybind key='W-S-p'><action name='Execute'><command>synclient MaxTapTime=0</command></action></keybind>
-
-    <keybind key='W-S-x'><action name='Execute'><command>xtrlock</command></action></keybind>
-    <keybind key='W-S-z'><action name='Execute'><command>locksleep</command></action></keybind><!-- lock and suspend -->
 
     <!-- Brightness -->
-    <keybind key='S-W-m'><action name='Execute'><command>backlight 7500</command></action></keybind>
-    <keybind key='S-W-n'><action name='Execute'><command>backlight 0</command></action></keybind>
     <keybind key='W-m'><action name='Execute'><command>backlight 4000</command></action></keybind>
     <keybind key='W-n'><action name='Execute'><command>backlight 150</command></action></keybind>
+    <keybind key='S-W-m'><action name='Execute'><command>backlight 7500</command></action></keybind>
+    <keybind key='S-W-n'><action name='Execute'><command>backlight 0</command></action></keybind>
+    <keybind key='W-comma'><action name='Execute'><command>backlight -150</command></action></keybind>
+    <keybind key='W-period'><action name='Execute'><command>backlight +150</command></action></keybind>
+    <keybind key='S-W-comma'><action name='Execute'><command>backlight -750</command></action></keybind>
+    <keybind key='S-W-period'><action name='Execute'><command>backlight +750</command></action></keybind>
     <keybind key='XF86MonBrightnessUp'><action name='Execute'><command>backlight +150</command></action></keybind>
     <keybind key='XF86MonBrightnessDown'><action name='Execute'><command>backlight -150</command></action></keybind>
     <keybind key='S-XF86MonBrightnessUp'><action name='Execute'><command>backlight +750</command></action></keybind>
     <keybind key='S-XF86MonBrightnessDown'><action name='Execute'><command>backlight -750</command></action></keybind>
-
 
     <!-- Volume -->
     <keybind key='W-Down'><action name='Execute'><command>vol-delta-pa -4096</command></action></keybind>
@@ -83,11 +81,12 @@
     <keybind key='S-A-space'><action name='ShowMenu'><menu>client-menu</menu></action></keybind>
     <keybind key='C-W-A-space'><action name='ShowMenu'><menu>root-menu</menu></action></keybind>
 
-    <!-- Keybindings for windows, optimized to 1600x900 screen -->
+    <!-- Keybindings for windows, optimized to 3840x2160 screen -->
     <keybind key='A-F4'><action name='Close'/></keybind>
 
     <keybind key='W-o'><action name='ToggleOmnipresent'></action></keybind>
-    <keybind key='W-grave'><action name='ToggleShowDesktop'/></keybind>
+    <keybind key='S-W-s'><action name='ToggleOmnipresent'></action></keybind>
+    <keybind key='W-d'><action name='ToggleShowDesktop'/></keybind>
     <keybind key='W-f'><action name='ToggleMaximize' /></keybind>
     <keybind key='W-v'><action name='ToggleMaximize'><direction>vertical</direction></action></keybind>
     <keybind key='W-g'><action name='ToggleMaximize'><direction>horizontal</direction></action></keybind>
@@ -111,48 +110,36 @@
     <keybind key='W-S-minus'><action name='MoveResizeTo'><height>720</height></action></keybind>
     <keybind key='W-S-equal'><action name='MoveResizeTo'><height>1440</height></action></keybind>
 
-    <keybind key='W-C-h'><action name='MoveRelative'><x>-8</x><y>0</y></action></keybind>
-    <keybind key='W-C-j'><action name='MoveRelative'><x>0</x><y>6</y></action></keybind>
-    <keybind key='W-C-k'><action name='MoveRelative'><x>0</x><y>-6</y></action></keybind>
-    <keybind key='W-C-l'><action name='MoveRelative'><x>8</x><y>0</y></action></keybind>
-
-    <keybind key='A-h'><action name='ResizeRelative'><left>8</left></action></keybind>
-    <keybind key='A-j'><action name='ResizeRelative'><bottom>6</bottom></action></keybind>
-    <keybind key='A-k'><action name='ResizeRelative'><top>6</top></action></keybind>
-    <keybind key='A-l'><action name='ResizeRelative'><right>8</right></action></keybind>
-    <keybind key='A-S-h'><action name='ResizeRelative'><right>-8</right></action></keybind>
-    <keybind key='A-S-j'><action name='ResizeRelative'><top>-6</top></action></keybind>
-    <keybind key='A-S-k'><action name='ResizeRelative'><bottom>-6</bottom></action></keybind>
-    <keybind key='A-S-l'><action name='ResizeRelative'><left>-8</left></action></keybind>
-
     <!-- Keybindings for applications -->
     <keybind key='W-t'><action name='Execute'><command>urxvt</command></action></keybind>
-    <keybind key='W-S-w'><action name='Execute'><command>chromium-browser</command></action></keybind>
-    <keybind key='W-b'><action name='Execute'><command>io.elementary.files</command></action></keybind>
-    <keybind key='S-W-b'><action name='Execute'><command>nautilus --no-desktop</command></action></keybind>
+    <keybind key='W-Escape'><action name='Execute'><command>locksleep</command></action></keybind><!-- lock and suspend -->
     <keybind key='Print'><action name='Execute'><command>shutter -f</command></action></keybind>
     <keybind key='S-Print'><action name='Execute'><command>shutter -w</command></action></keybind>
+    <keybind key='W-a'>
+      <keybind key='c'><action name='Execute'><command>chromium-browser</command></action></keybind>
+      <keybind key='f'><action name='Execute'><command>firefox</command></action></keybind>
+      <keybind key='n'><action name='Execute'><command>nautilus --no-desktop</command></action></keybind>
+      <keybind key='s'><action name='Execute'><command>shutter</command></action></keybind>
+      <keybind key='x'><action name='Execute'><command>xtrlock</command></action></keybind>
+    </keybind>
 
     <!-- Keybindings for desktop switching -->
-    <keybind key='W-q'><action name='GoToDesktop'><to>33</to></action></keybind>
-    <keybind key='W-w'><action name='GoToDesktop'><to>38</to></action></keybind>
-    <keybind key='W-e'><action name='GoToDesktop'><to>43</to></action></keybind>
-    <keybind key='W-a'><action name='GoToDesktop'><to>108</to></action></keybind>
-    <keybind key='W-s'><action name='GoToDesktop'><to>113</to></action></keybind>
-    <keybind key='W-d'><action name='GoToDesktop'><to>118</to></action></keybind>
-    <keybind key='W-z'><action name='GoToDesktop'><to>183</to></action></keybind>
-    <keybind key='W-x'><action name='GoToDesktop'><to>188</to></action></keybind>
-    <keybind key='W-c'><action name='GoToDesktop'><to>193</to></action></keybind>
+    <keybind key='W-s'>
+      <keybind key='q'><action name='GoToDesktop'><to>33</to></action></keybind>
+      <keybind key='w'><action name='GoToDesktop'><to>38</to></action></keybind>
+      <keybind key='e'><action name='GoToDesktop'><to>43</to></action></keybind>
+      <keybind key='a'><action name='GoToDesktop'><to>108</to></action></keybind>
+      <keybind key='s'><action name='GoToDesktop'><to>113</to></action></keybind>
+      <keybind key='d'><action name='GoToDesktop'><to>118</to></action></keybind>
+      <keybind key='z'><action name='GoToDesktop'><to>183</to></action></keybind>
+      <keybind key='x'><action name='GoToDesktop'><to>188</to></action></keybind>
+      <keybind key='c'><action name='GoToDesktop'><to>193</to></action></keybind>
+    </keybind>
 
     <keybind key='W-h'><action name='DesktopLeft'/></keybind>
     <keybind key='W-l'><action name='DesktopRight'/></keybind>
     <keybind key='W-k'><action name='DesktopUp'/></keybind>
     <keybind key='W-j'><action name='DesktopDown'/></keybind>
-
-    <keybind key='S-W-a'><action name='DesktopLeft'/></keybind>
-    <keybind key='S-W-f'><action name='DesktopRight'/></keybind>
-    <keybind key='S-W-d'><action name='DesktopUp'/></keybind>
-    <keybind key='S-W-s'><action name='DesktopDown'/></keybind>
 
     <keybind key='S-W-h'><action name='SendToDesktopLeft'/></keybind>
     <keybind key='S-W-l'><action name='SendToDesktopRight'/></keybind>
