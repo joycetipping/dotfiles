@@ -44,7 +44,7 @@
 
   <keyboard>
     <!-- General -->
-    <chainQuitKey>C-g</chainQuitKey>
+    <chainQuitKey>Escape</chainQuitKey>
 
     <!-- Brightness -->
     <keybind key='W-m'><action name='Execute'><command>backlight 4000</command></action></keybind>
@@ -89,7 +89,7 @@
     <keybind key='W-d'><action name='ToggleShowDesktop'/></keybind>
     <keybind key='W-f'><action name='ToggleMaximize' /></keybind>
     <keybind key='W-v'><action name='ToggleMaximize'><direction>vertical</direction></action></keybind>
-    <keybind key='W-g'><action name='ToggleMaximize'><direction>horizontal</direction></action></keybind>
+    <keybind key='W-r'><action name='ToggleMaximize'><direction>horizontal</direction></action></keybind>
 
     <keybind key='W-1'><action name='MoveResizeTo'><x>0</x></action></keybind>
     <keybind key='W-2'><action name='MoveResizeTo'><x>center</x></action></keybind>
