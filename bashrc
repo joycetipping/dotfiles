@@ -65,14 +65,39 @@ alias d="date"
 alias now="date '+%A %-d %B %Y %H:%M:%S %Z'"
 
 # Other
-#alias audio='arecord -f cd -t raw | oggenc - -r -o ~/media/audio/arecord/`date +%Y.%m%d.%H%M%S`.ogg'
-alias audio="rec -r 48k -b 32 ~/media/audio/sox/`date +%Y.%m%d.%H%M%S`.ogg"
 alias bc="echo Starting bc -l;echo;bc -l"
 alias grep="grep --color"
 alias pd='rlwrap perl -de1'
 alias pyserver='python -m SimpleHTTPServer 8080'
 alias sizes='du -sh | sort -h'
 alias sus='sudo pm-suspend'
+
+# }}}
+
+# Functions {{{
+
+audio () {
+  #arecord -f cd -t raw | oggenc - -r -o ~/media/audio/arecord/`date +%Y.%m%d.%H%M%S`.ogg
+  rec -r 48k -b 32 ~/media/audio/sox/`date +%Y.%m%d.%H%M%S`.ogg
+}
+
+count () {
+  # Count the number of files in the given directories
+  if [[ "$#" == "0" ]]
+  then
+    ls | wc -l
+  else
+    for var in "$@";
+    do
+      ls "$var" | wc -l
+    done
+  fi
+}
+
+csum () {
+  # Sum the number of files in the given directories
+  count "$@" | awk '{s+=$1} END {print s}'
+}
 
 # }}}
 
@@ -106,27 +131,6 @@ export R_LIBS="$HOME/.R:$R_LIBS"
 rubyserver () {
   port="${1:-3000}"
   ruby -run -e httpd . -p $port
-}
-
-
-# Miscellaneous
-# -------------
-count () {
-  # Count the number of files in the given directories
-  if [[ "$#" == "0" ]]
-  then
-    ls | wc -l
-  else
-    for var in "$@";
-    do
-      ls "$var" | wc -l
-    done
-  fi
-}
-
-csum () {
-  # Sum the number of files in the given directories
-  count "$@" | awk '{s+=$1} END {print s}'
 }
 
 # }}}
