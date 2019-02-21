@@ -24,8 +24,8 @@
   </theme>
 
   <desktops>
-    <number>225</number>
-    <firstdesk>113</firstdesk>
+    <number>255</number>
+    <firstdesk>114</firstdesk>
     <popupTime>1000</popupTime>
   </desktops>
 
@@ -124,16 +124,36 @@
     </keybind>
 
     <!-- Keybindings for desktop switching -->
-    <keybind key='W-s'>
-      <keybind key='q'><action name='GoToDesktop'><to>33</to></action></keybind>
-      <keybind key='w'><action name='GoToDesktop'><to>38</to></action></keybind>
-      <keybind key='e'><action name='GoToDesktop'><to>43</to></action></keybind>
-      <keybind key='a'><action name='GoToDesktop'><to>108</to></action></keybind>
-      <keybind key='s'><action name='GoToDesktop'><to>113</to></action></keybind>
-      <keybind key='d'><action name='GoToDesktop'><to>118</to></action></keybind>
-      <keybind key='z'><action name='GoToDesktop'><to>183</to></action></keybind>
-      <keybind key='x'><action name='GoToDesktop'><to>188</to></action></keybind>
-      <keybind key='c'><action name='GoToDesktop'><to>193</to></action></keybind>
+    <keybind key='W-g'>
+      <keybind key='a'><action name='GoToDesktop'><to>87</to></action></keybind>
+      <keybind key='b'><action name='GoToDesktop'><to>90</to></action></keybind>
+      <keybind key='c'><action name='GoToDesktop'><to>93</to></action></keybind>
+      <keybind key='d'><action name='GoToDesktop'><to>96</to></action></keybind>
+      <keybind key='e'><action name='GoToDesktop'><to>99</to></action></keybind>
+      <keybind key='f'><action name='GoToDesktop'><to>102</to></action></keybind>
+      <keybind key='g'><action name='GoToDesktop'><to>105</to></action></keybind>
+      <keybind key='h'><action name='GoToDesktop'><to>108</to></action></keybind>
+      <keybind key='i'><action name='GoToDesktop'><to>111</to></action></keybind>
+      <keybind key='j'><action name='GoToDesktop'><to>114</to></action></keybind>
+      <keybind key='k'><action name='GoToDesktop'><to>117</to></action></keybind>
+      <keybind key='l'><action name='GoToDesktop'><to>120</to></action></keybind>
+      <keybind key='m'><action name='GoToDesktop'><to>123</to></action></keybind>
+      <keybind key='n'><action name='GoToDesktop'><to>126</to></action></keybind>
+      <keybind key='o'><action name='GoToDesktop'><to>129</to></action></keybind>
+      <keybind key='p'><action name='GoToDesktop'><to>132</to></action></keybind>
+      <keybind key='q'><action name='GoToDesktop'><to>135</to></action></keybind>
+      <keybind key='r'><action name='GoToDesktop'><to>138</to></action></keybind>
+      <keybind key='s'><action name='GoToDesktop'><to>141</to></action></keybind>
+      <keybind key='t'><action name='GoToDesktop'><to>144</to></action></keybind>
+      <keybind key='u'><action name='GoToDesktop'><to>147</to></action></keybind>
+      <keybind key='v'><action name='GoToDesktop'><to>150</to></action></keybind>
+      <keybind key='w'><action name='GoToDesktop'><to>153</to></action></keybind>
+      <keybind key='x'><action name='GoToDesktop'><to>156</to></action></keybind>
+      <keybind key='y'><action name='GoToDesktop'><to>159</to></action></keybind>
+      <keybind key='z'><action name='GoToDesktop'><to>162</to></action></keybind>
+      <keybind key='semicolon'><action name='GoToDesktop'><to>165</to></action></keybind>
+      <keybind key='apostrophe'><action name='GoToDesktop'><to>168</to></action></keybind>
+      <keybind key='backslash'><action name='GoToDesktop'><to>170</to></action></keybind>
     </keybind>
 
     <keybind key='W-h'><action name='DesktopLeft'/></keybind>
