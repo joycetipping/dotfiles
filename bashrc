@@ -55,6 +55,11 @@ alias projects="cd $HOME/projects/"
 alias safe="cd $HOME/projects/safe/"
 alias website="cd $HOME/projects/joycetipping.com/"
 
+alias common="cd /mnt/v1/common/"
+alias jt="cd /mnt/v1/jt/"
+alias kids="cd /mnt/v1/kids/"
+alias v1="cd /mnt/v1/"
+
 # Home
 alias ev0="curl http://192.168.0.34:8180/0"  # turn evaporative off
 alias evf="curl http://192.168.0.34:8180/4"  # turn evaporative to fan
