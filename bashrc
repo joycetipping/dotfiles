@@ -57,7 +57,7 @@ alias website="cd $HOME/projects/joycetipping.com/"
 
 alias common="cd /mnt/v1/common/"
 alias jt="cd /mnt/v1/jt/"
-alias kids="cd /mnt/v1/kids/"
+alias kids="cd /mnt/v1/common/kids/"
 alias v1="cd /mnt/v1/"
 
 # Home
