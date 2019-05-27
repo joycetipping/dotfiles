@@ -72,8 +72,10 @@ alias now="date '+%A %-d %B %Y %H:%M:%S %Z'"
 # Other
 alias bc="echo Starting bc -l;echo;bc -l"
 alias grep="grep --color"
+alias ffcopy="ffmpeg -c copy"
 alias pd='rlwrap perl -de1'
 alias pyserver='python -m SimpleHTTPServer 8080'
+alias randsync='find -print0 -type f | shuf | head -n100 | xargs -0 -I{} rsync -aP {}'
 alias sizes='du -sh | sort -h'
 alias sus='sudo pm-suspend'
 
