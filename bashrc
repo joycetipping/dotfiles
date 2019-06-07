@@ -106,6 +106,15 @@ csum () {
   count "$@" | awk '{s+=$1} END {print s}'
 }
 
+randcopy () {
+  number=$1
+  shift
+  destination=$1
+  shift
+
+  find -print0 -type f | shuf | head -n$number | xargs -0 -I{} rsync -aP {} $destination $@
+}
+
 howlong () {
   # Display the length of an audio file
   ffmpeg -i $1 2>&1 | grep Duration
