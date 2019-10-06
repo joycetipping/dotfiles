@@ -53,8 +53,8 @@
     <keybind key='S-W-n'><action name='Execute'><command>backlight 0</command></action></keybind>
     <keybind key='W-comma'><action name='Execute'><command>backlight -150</command></action></keybind>
     <keybind key='W-period'><action name='Execute'><command>backlight +150</command></action></keybind>
-    <keybind key='S-W-comma'><action name='Execute'><command>backlight -750</command></action></keybind>
-    <keybind key='S-W-period'><action name='Execute'><command>backlight +750</command></action></keybind>
+    <keybind key='S-W-comma'><action name='Execute'><command>backlight -1</command></action></keybind>
+    <keybind key='S-W-period'><action name='Execute'><command>backlight +1</command></action></keybind>
     <keybind key='XF86MonBrightnessUp'><action name='Execute'><command>backlight +150</command></action></keybind>
     <keybind key='XF86MonBrightnessDown'><action name='Execute'><command>backlight -150</command></action></keybind>
     <keybind key='S-XF86MonBrightnessUp'><action name='Execute'><command>backlight +750</command></action></keybind>

@@ -13,6 +13,7 @@ export VISUAL="/usr/bin/vim"
 export TERM='xterm-256color'
 export TZ='/usr/share/zoneinfo/America/Denver'  # Set time zone to MST
 export GDK_SCALE=2  # Scale all gtk-3.0 applications for 4k monitor
+export QT_SCALE_FACTOR=2
 
 # Source Spencer's bash prompt
 [[ -d ~/.bash ]] || git clone git@github.com:joycetipping/dotbash.git "$HOME/.bash"
@@ -70,9 +71,9 @@ alias d="date"
 alias now="date '+%A %-d %B %Y %H:%M:%S %Z'"
 
 # Other
+alias baby="ssh iridium 'arecord -f cd -t wav' | play -t wav - compand .01,.01 -inf,-40,-inf,-40,-40 0 -90 .1"
 alias bc="echo Starting bc -l;echo;bc -l"
 alias grep="grep --color"
-alias ffcopy="ffmpeg -c copy"
 alias pd='rlwrap perl -de1'
 alias pyserver='python -m SimpleHTTPServer 8080'
 alias randsync='find -print0 -type f | shuf | head -n100 | xargs -0 -I{} rsync -aP {}'
